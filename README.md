@@ -10,7 +10,7 @@ Use this repository to bootstrap a new sipgate Integration Bridge.
 4. Start the bridge with `npm start`.
 5. Edit the `index.ts` file and implement the method stubs.
 6. Test your implementation (e.g. `curl -H "X-Provider-Key: abcdef123456" -H "X-Provider-URL: https://www.example.com" http://localhost:8080/contacts`).
-7. Create a new Git repository (e.g. `sipgate-integration-bridge-mycrm`) and push your bridge.
+7. Create a new Git repository (e.g. `mycrm-integration-bridge`) and push your bridge.
 
 ## Coding style and linting
 
