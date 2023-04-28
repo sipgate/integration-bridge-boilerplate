@@ -1,0 +1,20 @@
+{
+	"extends": [
+		"config:base",
+		":rebaseStalePrs",
+		"github>whitesource/merge-confidence:beta"
+	],
+	"schedule": ["after 10am and before 6pm every weekday"],
+	"timezone": "Europe/Berlin",
+	"stabilityDays": 2,
+	"vulnerabilityAlerts": {
+		"commitMessagePrefix": "[SECURITY]",
+		"automerge": true
+	},
+	"packageRules": [
+		{
+			"matchPackagePrefixes": ["@sipgate"],
+			"automerge": true
+		}
+	]
+}
