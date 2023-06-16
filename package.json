@@ -9,7 +9,7 @@
     "prepare": "husky install",
     "precommit": "lint-staged",
     "build": "tsc",
-    "start": "ts-node-dev src/index.ts",
+    "start": "NODE_ENV=development ts-node-dev src/index.ts",
     "start:redis": "export REDIS_URL=http://localhost && ts-node-dev src/index.ts",
     "lint": "eslint 'src/**/*.ts' --fix",
     "format": "prettier --write ."
